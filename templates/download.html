@@ -1,0 +1,17 @@
+{% extends 'layout.html' %} {% block content %}
+<nav>Youtube Video Downloader</nav>
+<h1>Get to Download your Favorite Youtube Videos</h1>
+<h2>View Your Download Video Details:</h2>
+<h3>Title :{{url.title}}</h3>
+<h3>Views :{{ url.views}}</h3>
+<form action="{{url_for('download')}}" method="POST">
+  <label>Resolution:</label>
+  <select name="itag">
+    {% for i in url.streams.filter(progressive=True)%}
+    <option value="{{i.itag}}">{{i.resolution}}</option>
+    {%endfor%}
+  </select>
+  <button type="submit">Download</button>
+</form>
+
+{% endblock content %}

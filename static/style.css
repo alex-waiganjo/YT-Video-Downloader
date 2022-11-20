@@ -1,0 +1,66 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: chartreuse;
+}
+h1,h2,h3{
+    margin:2rem;
+    background-color: bisque;
+    text-align: center;
+    padding:1rem;
+    width:auto;
+}
+h2{
+background-color: darkgrey;
+}
+h3{
+    background-color: darkorange;
+}
+select{
+    padding:1rem;
+    color:blue;
+    background-color: rgb(238, 60, 95);
+    font-size: 1rem;
+}
+form label{
+    font-size: 2rem;
+}
+.imager{
+    margin:2.5rem;
+    border-radius: 1rem;
+   display: flex;
+   justify-content: center;  
+   height:600px;    
+}
+form{
+    display: grid; 
+    justify-content: center;
+}
+form input{
+    padding:1rem;
+    width:500px;
+}
+button{
+ font-weight: 300;
+ font-size: 1.5rem;
+ background-color:slateblue;
+ padding: 1rem;
+ margin:1rem;
+ width:auto;
+ border-radius: 9px;
+}
+button:hover{
+    background-color:rgb(87, 64, 238) ;
+    color:chartreuse;
+}
+nav{
+    background-color: rgb(30, 30, 70);
+    text-align: center;
+    font-size: 2rem;
+    padding:1.5rem;
+    margin:0;
+    font-weight: bold;
+    color:aqua;
+}
